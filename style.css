@@ -1,0 +1,288 @@
+@import url(reset.css);
+
+:root{
+    --cor-um: #667085;
+    --cor-dois: #8E2424;
+    --cor-tres: #101828;
+    --cor-quatro: #FFFFFF;
+    --cor-cinco: #EAECF0;
+    --cor-seis: #C31919;
+    --cor-sete: #98A2B3;
+    --cor-oito: #D0D5DD;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--cor-um);
+}
+
+/*SEÇÃO DE CABEÇALHO*/
+
+.header {
+    padding: 18px 80px;
+}
+
+.container {
+    display: flex;
+    padding: 8.5px 32px;
+    align-items: center;
+}
+
+.container__logo-nome {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nome-empresa {
+    font-size: 18px;
+}
+
+/*-----------------------*/
+
+.container__links {
+    display: flex;
+    margin-left: 119px;
+    padding: 4px 0;
+    gap: 32px;
+}
+
+.container__links__link {
+    text-decoration: none;
+    list-style: none;
+}
+
+.container__links__link__ancora {
+    text-decoration: none;
+    color: var(--cor-um);
+}
+
+/*-----------------------*/
+
+.container__links-dois {
+    width: 207px;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__links-dois__item-lista-entrar {
+    width: 83px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ancora-entrar {
+    text-decoration: none;
+    color: var(--cor-um);
+}
+
+.container__links-dois__item-lista-cadastrar {
+    width: 112px;
+    height: 44px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-dois);
+}
+
+.ancora-cadastrar {
+    text-decoration: none;
+    color: var(--cor-quatro);
+}
+
+/*SEÇÃO DE SOBRE NOS*/
+
+.sobrenos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobrenos__sobre {
+    color: var(--cor-dois);
+    font-weight: 700;
+    margin-top: 96px;
+}
+
+.sobrenos__titulo {
+    color: var(--cor-tres);
+    font-size: 3em;
+    margin: 24px auto;
+    font-weight: 600;
+}
+
+.sobrenos__texto {
+    margin: 0px 520px 96px 520px;
+    font-size: 1.26em;
+    text-align: center;
+}
+
+/*SEÇÃO DE METRICAS*/
+
+.metricas__container {
+    display: flex;
+    padding: 0 112px 96px 112px;
+    gap: 32px;
+}
+
+.metrica__number {
+    font-size: 3.75em;
+    font-weight: 600;
+    color: var(--cor-dois);
+    margin-bottom: 20px;
+}
+
+.metrica__titulo {
+    font-size: 1.125em;
+    color: var(--cor-tres);
+    font-weight: 600;
+}
+
+/*SEÇÃO DE VAGAS*/
+
+.vagas-container {
+    text-align: center;
+}
+
+.anuncio-vagas {
+    font-size: 14px;
+    color: var(--cor-dois);
+    font-weight: 600;
+    background-color: rgba(142, 36, 36, 0.05);
+    display: inline-block;
+    padding: 6px;
+    border-radius: 20px;
+    margin: 96px 0px 16px 0px;
+}
+
+.titulo-vagas {
+    font-size: 2.25em;
+    font-weight: 600;
+    color: var(--cor-tres);
+    margin-bottom: 20px;
+}
+
+.texto-vagas {
+    font-size: 1.25em;
+    margin-bottom: 64px;
+}
+
+/*--------------------------*/
+
+.vagas-container-2 {
+    margin: 64px 80px;
+    padding: 0px 450px;
+    text-align: left;
+}
+
+.vagas-container-2__titulo {
+    font-size: 1.25em;
+    font-weight: 600;
+    color: var(--cor-tres);
+}
+
+.container-info-vaga {
+    border: solid 1px var(--cor-cinco);
+    border-radius: 16px;
+    padding: 24px 24px 28px 24px;
+    margin: 24px 0px;
+}
+
+.container-info-vaga__titulo {
+    color: var(--cor-tres);
+    font-size: 1.125em;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.container-info-vaga__info {
+    display: flex;
+    gap: 24px;
+}
+
+/*SEÇÃO DE DEPOIMENTOS*/
+
+.depoimentos-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 64px 64px 64px;
+}
+
+.depoimentos-container__primario {
+    background-color: rgb(195, 25, 25, 0.03);
+    border-radius: 16px;
+}
+
+.depoimentos-container__secundario {
+    text-align: center;
+    margin: 64px;
+}
+
+.titulo-depoimento {
+    color: var(--cor-dois);
+    font-size: 0.875em;
+    font-weight: 600;
+}
+
+.depoimento-texto {
+    font-size: 2.25em;
+    margin-top: 24px;
+    font-weight: 500;
+    color: var(--cor-tres);
+}
+
+.nome-pessoa-depoimento {
+    color: var(--cor-tres);
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+.cargo-pessoa-depoimento {
+    font-size: 0.875em;
+}
+
+/*SEÇÃO DE RODAPÉ*/
+
+.rodape {
+    background-color: #F9FAFB;
+    text-align: center;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.rodape__container-1__frase-1 {
+    font-size: 2.25em;
+    color: var(--cor-tres);
+    font-weight: 600;
+}
+
+.rodape__container-1__frase-2 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 1.25em;
+}
+
+.campo-email {
+    padding: 12px 14px;
+    border-radius: 8px;
+    width: 360px;
+    border: 1px solid var(--cor-oito);
+}
+
+.botao-cadastrar {
+    background-color: var(--cor-dois);
+    color: var(--cor-quatro);
+    padding: 12px 20px;
+    border-radius: 8px;
+    border-style: none;
+}
+
+.copyright {
+    margin-top: 32px;
+    color: var(--cor-sete);
+}
